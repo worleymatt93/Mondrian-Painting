@@ -1,0 +1,64 @@
+:root {
+    --black: #232629;
+    --blue: #004592;
+    --red: #E72F24;
+    --white: #F0F1EC;
+    --yellow: #F9D01E;
+    --gap-color: #000;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.grid-container {
+    background-color: var(--gap-color);
+    max-width: fit-content;
+    max-height: fit-content;      
+    display: grid;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 20px;
+    gap: 9px;
+}
+
+#cell1 {
+    background-color: var(--red);
+}
+
+#cell2, #cell3, #cell4, #cell6, #cell7 {
+    background-color: var(--white);
+}
+
+#cell2 {
+    grid-column: span 3;
+}
+
+#cell3 {
+    grid-row: span 2;
+}
+
+#cell4 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#cell5 {
+    background-color: var(--blue);
+}
+
+#cell6 {
+    grid-row: span 2;
+    margin-top: 10px;
+}
+
+#cell8 {
+    background-color: var(--yellow);
+}
+
+#cell9 {
+    background-color: var(--black);
+}
